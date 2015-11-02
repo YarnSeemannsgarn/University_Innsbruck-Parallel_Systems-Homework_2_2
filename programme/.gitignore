@@ -1,0 +1,4 @@
+aligned_arrays
+aligned_arrays_optimized
+cachegrind*
+*.o
