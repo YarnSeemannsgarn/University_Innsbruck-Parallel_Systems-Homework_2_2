@@ -51,7 +51,7 @@ aligned_arrays_optimized | 0.33           | I1 misses: 898, D1 misses:  264021, 
 
 The stacksize of the main programme needed to be adapted, otherwise there will be a segmentation fault within valgrind. The number 33554432 is just the initial main stacksize number doubled.
 
-The L1 and L2 data cache misses of the initial programme are nearly 1024*1024*4 (4194304), which means that nearly every access to the arrays are cache misses.
+The L1 and L2 data cache misses of the initial programme are nearly 1024x1024x4 (4194304), which means that nearly every access to the arrays are cache misses.
 
 The cache misses of the optimized programme are much less than in the cache misses in the initial programme (Explanation in the programme). The runtime on the other hand is a little bit bigger, probably due to the multiplication for accessing the array (e.g. a[i*3]).
 
